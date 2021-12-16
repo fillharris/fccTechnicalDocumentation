@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.css">
+    <title>HTML Documentation</title>
+  </head>
+  <body>
+    <nav id="navbar">
+      <header><h1>HTML Documentation</h1></header>
+      <a href="#Introduction" class="nav-link">Introduction</a>
+      <a href="#Body" class="nav-link">Body</a>
+      <a href="#Division" class="nav-link">Division</a>
+      <a href="#Paragraph" class="nav-link">Paragraph</a>
+      <a href="#Footer" class="nav-link">Footer</a>
+      <a href="#Section" class="nav-link">Section</a>
+    </nav>
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header><h2>Introduction</h2></header>
+        <p>
+          HTML (HyperText Markup Language) is a descriptive language that
+          specifies webpage structure.
+        </p>
+        <p>
+          An HTML document is a plaintext document structured with elements.
+          Elements are surrounded by matching opening and closing tags. Each tag
+          begins and ends with angle brackets (<>). There are a few empty or
+          void tags that cannot enclose any text, for instance
+          <code>&lt;img&gt;</code>.
+        </p>
+        <p>Here are a few examples of HTML tags</p>
+        <ul>
+          <li><code>&lt;body&gt;</code></li>
+          <li><code>&lt;div&gt;</code></li>
+          <li><code>&lt;p&gt;</code></li>
+          <li><code>&lt;footer&gt;</code></li>
+          <li><code>&lt;section&gt;</code></li>
+        </ul>
+      </section>
+      <section class="main-section" id="Body">
+        <header><h2>Body</h2></header>
+        <p>
+          The <code>&lt;body&gt;</code> HTML element represents the content of
+          an HTML document. There can be only one
+          <code>&lt;body&gt;</code> element in a document.
+        </p>
+        <p>Global attributes can be used with this element.</p>
+      </section>
+      <section class="main-section" id="Division">
+        <header><h2>Division</h2></header>
+        <p>
+          The <code>&lt;div&gt;</code> HTML element is the generic container for
+          flow content. It has no effect on the content or layout until styled
+          in some way using CSS (e.g. styling is directly applied to it, or some
+          kind of layout model like Flexbox is applied to its parent element).
+        </p>
+        <p>
+          As a "pure" container, the <code>&lt;div&gt;</code> element does not
+          inherently represent anything. Instead, it's used to group content so
+          it can be easily styled using the class or id attributes, marking a
+          section of a document as being written in a different language (using
+          the lang attribute), and so on.
+        </p>
+      </section>
+      <section class="main-section" id="Paragraph">
+        <header><h2>Paragraph</h2></header>
+        <p>
+          The <code>&lt;p&gt;</code> HTML element represents a paragraph.
+          Paragraphs are usually represented in visual media as blocks of text
+          separated from adjacent blocks by blank lines and/or first-line
+          indentation, but HTML paragraphs can be any structural grouping of
+          related content, such as images or form fields.
+        </p>
+        <p>
+          Paragraphs are block-level elements, and notably will automatically
+          close if another block-level element is parsed before the closing
+          <code>&lt;p&gt;</code> tag. See “Tag omission” below.
+        </p>
+      </section>
+      <section class="main-section" id="Footer">
+        <header><h2>Footer</h2></header>
+        <p>
+          The <code>&lt;footer&gt;</code> HTML element represents a footer for
+          its nearest sectioning content or sectioning root element. A
+          <code>&lt;footer&gt;</code> typically contains information about the
+          author of the section, copyright data or links to related documents.
+        </p>
+        <p>Global attributes can be used with this element.</p>
+      </section>
+      <section class="main-section" id="Section">
+        <header><h2>Section</h2></header>
+        <p>
+          The <code>&lt;section&gt;</code> HTML element represents a generic
+          standalone section of a document, which doesn't have a more specific
+          semantic element to represent it. Sections should always have a
+          heading, with very few exceptions.
+        </p>
+        <p>
+          As mentioned above, <code>&lt;section&gt;</code> is a generic
+          sectioning element, and should only be used if there isn't a more
+          specific element to represent it. As an example, a navigation menu
+          should be wrapped in a <code>&lt;nav&gt;</code> element, but a list of
+          search results or a map display and its controls don't have specific
+          elements, and could be put inside a <code>&lt;section&gt;</code>.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>
